@@ -51,10 +51,6 @@ body {
 @media (max-width: 320px) {
   /*0~320*/
   body {
-    background: pink;
-  }
-
-  body {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -95,6 +91,12 @@ body {
 }
 @media (min-width: 376px) and (max-width: 425px) {
   /*376~425*/
+  .flip-clock-wrapper {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: -3.35em;
+  }
   .clock {
     width: auto;
     transform: scale(1, 1);
