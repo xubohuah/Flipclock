@@ -22,13 +22,13 @@
 	</div>
 
 	<div id="div1">
-		show
-		Seconds
+		shwo
+		Seconds?
 		<button id="btn"></button>
 	</div>
 
 	<script type="text/javascript">
-
+		let showSeconds = false
 		window.onload = function () {
 			var div1 = document.getElementById('div1');
 			div1.onmouseover = function () {
@@ -50,7 +50,7 @@
 					speed = -1;
 				}
 				if (div1.offsetLeft == iTarget) {
-					clearInterval(tiemr);
+					clearInterval(timer);
 				}
 				div1.style.left = div1.offsetLeft + speed * 10 + 'px';
 			}, 30)
@@ -62,7 +62,7 @@
 		$(document).ready(function () {
 			clock = $('.clock').FlipClock({
 				clockFace: 'TwentyFourHourClock',
-				showSeconds: false
+				showSeconds: showSeconds
 			});
 		});
 
@@ -83,10 +83,11 @@
 		})
 		var btn = document.getElementById("div1");
 		btn.onclick = function () {
+			showSeconds = !showSeconds
 			$(document).ready(function () {
 				clock = $('.clock').FlipClock({
 					clockFace: 'TwentyFourHourClock',
-					showSeconds: true
+					showSeconds: showSeconds
 				});
 			});
 		}
