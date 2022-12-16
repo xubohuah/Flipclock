@@ -16,7 +16,7 @@
   line-height: 50px;
   text-align: center;
   color: aliceblue;
-  background:  #222;
+  background:  #000000;
   position: absolute;
   left: 100px;
   border: none;
@@ -27,7 +27,8 @@ body {
   justify-content: center;
   align-items: center;
   /*min-height: 100vh;*/
-  background: #222;
+  /* background: #222; */
+  background-color: #000000;
 }
 .clock {
   width: auto;
