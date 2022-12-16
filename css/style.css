@@ -98,6 +98,14 @@ body {
   .clock {
     width: auto;
     transform: scale(1, 1);
+    -ms-transform: rotate(90deg);
+    /* Internet Explorer 9*/
+    -moz-transform: rotate(90deg);
+    /* Firefox */
+    -webkit-transform: rotate(90deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(90deg);
+    /* Opera */
   }
 }
 @media (min-width: 426px) and (max-width: 768px) {
